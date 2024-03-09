@@ -1,7 +1,6 @@
 <template>
   <h1 class="text-3xl text-center pt-8">Data from Google Sheets</h1>
   <div v-for="(card, index) in sheetResonse?.data" :key="index" class="p-4">
-    {{ card }}
     <Card :card="card" />
   </div>
 </template>
